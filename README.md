@@ -1,3 +1,6 @@
+this is my personal app for managing the tasks
+
+
 <<<<<<< HEAD
 # Getting Started with Create React App
 
