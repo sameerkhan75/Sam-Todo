@@ -1,4 +1,9 @@
-body {
+html,body {
+  
+  background: url('./MyComponents/im.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 0;
+  height: 100%; 
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
