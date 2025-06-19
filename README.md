@@ -46,3 +46,5 @@ A simple, component-based Todo List app built with React and Hooks. It demonstra
    ```bash
    git clone https://github.com/75/Sam-Todo.git
    cd Sam-Todo
+## author
+sameer
