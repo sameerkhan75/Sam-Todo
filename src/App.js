@@ -5,6 +5,7 @@ import Footer from "./MyComponents/Footer";
 import TodoItems from "./MyComponents/TodoItems";
 import Todos from "./MyComponents/Todos";
 import react, {useState} from 'react';
+import AddTodo from "./MyComponents/AddTodo"
 function App() { 
   const onDelete=(todo)=>{
     console.log("i am ondelete of todo",todo);
@@ -32,6 +33,7 @@ function App() {
   ]);
   return (<>
   <Header title="MyTodosList" searchbar={true}/>
+  <AddTodo/>
   <Todos todos={todos} onDelete={onDelete}/>
   <Footer/>
 </>
