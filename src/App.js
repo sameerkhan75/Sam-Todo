@@ -6,10 +6,11 @@ import TodoItems from "./MyComponents/TodoItems";
 import Todos from "./MyComponents/Todos";
 import react, {useState,useEffect} from 'react';
 import AddTodo from "./MyComponents/AddTodo";
-import {About} from "./MyComponents/About";
+import About from "./MyComponents/About";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
-import { BrowserRouter, Route, Router } from "react-router";
 function App() {
   let initTodo;
   if(localStorage.getItem("todos")===null){
@@ -55,29 +56,23 @@ function App() {
     },[todos])
 
   return (<>
-  <Router>
+<Router>
+  <Header title="MyTodosList" searchbar={true} />
+  <Routes>
+    <Route
+      path="/"
+      element={
+        <>
+          <AddTodo addTodo={addTodo} />
+          <Todos todos={todos} onDelete={onDelete} />
+        </>
+      }
+    />
+    <Route path="/about" element={<About />} />
+  </Routes>
+  <Footer />
+</Router>
 
-  <Header title="MyTodosList" searchbar={true}/>
-  <Switch>
-    <Route path="/" render={()=>{
-      return(
-      <>
-      <AddTodo addTodo={addTodo}/>
-      <Todos todos={todos} onDelete={onDelete}/>  
-      </>)
-    }}>
-
-    </Route>
-    <Route path="/about">
-    <About/>
-    </Route>
-  </Switch>
-
-
-
-
-  <Footer/>
-  </Router>
 </>
   );
 }
