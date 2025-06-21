@@ -6,6 +6,8 @@ import TodoItems from "./MyComponents/TodoItems";
 import Todos from "./MyComponents/Todos";
 import react, {useState,useEffect} from 'react';
 import AddTodo from "./MyComponents/AddTodo"
+
+import { BrowserRouter, Router } from "react-router";
 function App() {
   let initTodo;
   if(localStorage.getItem("todos")===null){
@@ -51,10 +53,13 @@ function App() {
     },[todos])
 
   return (<>
+  <Router>
+
   <Header title="MyTodosList" searchbar={true}/>
   <AddTodo addTodo={addTodo}/>
   <Todos todos={todos} onDelete={onDelete}/>
   <Footer/>
+  </Router>
 </>
   );
 }
