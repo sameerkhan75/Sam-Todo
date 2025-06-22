@@ -7,7 +7,7 @@ const Todos = (props) => {
       <h3 className="my-3">Todo List</h3>
 
       {props.todos.length === 0
-        ? "No Todos to display"
+        ? "Great,You have completed all your tasks "
         : props.todos.map(todo => (
             <TodoItems
               todo={todo}
