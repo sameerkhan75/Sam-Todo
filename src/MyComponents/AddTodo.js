@@ -17,14 +17,14 @@ const AddTodo = (props) => {
     }
   return (
     <div className="container my-3">
-        <h3>Add a Todo</h3>
+        <h3>Add Your task</h3>
       <form onSubmit={submit}>
   <div className="mb-3">
-    <label htmlFor="title" className="form-label">Todo Title</label>
+    <label htmlFor="title" className="form-label">Work Title</label>
     <input type="text" value={title} onChange={(e)=>{setTitle(e.target.value)}} className="form-control" id="title" aria-describedby="add your todo plz"/>
   </div>
   <div className="mb-3">
-    <label for="desc" className="form-label">Todo Description</label>
+    <label for="desc" className="form-label">Work Description</label>
     <input type="text" value={desc} onChange={(e)=>{setDesc(e.target.value)}} className="form-control" id="desc"/>
   </div>
 
