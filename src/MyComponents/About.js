@@ -12,7 +12,7 @@ const About = () => {
         
       </p>
       <p>
-        It has clean interface so that you won't have to worry about unneccessary features
+        It has clean interface so that you won't have to worry about unneccessary features. you can add images with the items
       </p>
     </div>
   );
