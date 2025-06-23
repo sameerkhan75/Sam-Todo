@@ -14,7 +14,9 @@ const AddTodo = (props) => {
           setTitle ("");
           setDesc ("");
         }
+
     }
+  
   return (
     <div className="container my-3">
         <h3>Add Your task</h3>
@@ -31,7 +33,10 @@ const AddTodo = (props) => {
   <button type="submit" className="btn btn-sm btn-success">AddTodo</button>
 </form>
     </div>
+
+    
   )
+  
 }
 
 export default AddTodo
