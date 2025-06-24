@@ -1,9 +1,17 @@
 import React, { useState } from 'react';
-
 const AddTodo = (props) => {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+
+  const getImageForTitle = (title) => {
+    const lowerTitle = title.toLowerCase();
+    if (lowerTitle === 'work') return '/mol.png';
+    if (lowerTitle === 'study') return '/mol.png';
+    if (lowerTitle === 'exercise') return '/mol.png';
+    return '/mol.png';
+  };
+
 
   const submit = (e) => {
     e.preventDefault();
@@ -11,7 +19,8 @@ const AddTodo = (props) => {
       alert("Title or Description cannot be blank");
     } else {
       setIsLoading(true);
-      props.addTodo(title, desc);
+      const img = getImageForTitle(title);
+      props.addTodo(title, desc, img);
       setTitle("");
       setDesc("");
       setIsLoading(false);
@@ -20,7 +29,7 @@ const AddTodo = (props) => {
 
   return (
     <div className="container my-3">
-      <h3>Add Your task</h3>
+      <h3>Add Your Task</h3>
       <form onSubmit={submit}>
         <div className="mb-3">
           <label htmlFor="title" className="form-label">Work Title</label>

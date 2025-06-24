@@ -26,7 +26,7 @@ function App() {
     localStorage.getItem("todos",JSON.stringify(todos));
 
   }
-  const addTodo=(title,desc)=>{
+  const addTodo=(title,desc,img)=>{
     console.log("I am adding this todo",title, desc)
     let sno;
     if(todos.length===0){
@@ -40,6 +40,7 @@ function App() {
       sno: sno,
       title: title,
       desc: desc,
+      img: img,
     }
 
     setTodos([...todos,myTodo]);
