@@ -8,7 +8,6 @@ const AddTodo = (props) => {
     const lowerTitle = title.toLowerCase();
     if (lowerTitle === 'work') return '/work.jpeg';
     if (lowerTitle === 'study') return '/study.jpeg';
-    if (lowerTitle === 'exercise') return '/mol.png';
     if (lowerTitle === 'chill') return '/chill.jpeg';
     else{
       
