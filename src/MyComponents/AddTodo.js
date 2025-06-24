@@ -6,10 +6,14 @@ const AddTodo = (props) => {
 
   const getImageForTitle = (title) => {
     const lowerTitle = title.toLowerCase();
-    if (lowerTitle === 'work') return '/mol.png';
-    if (lowerTitle === 'study') return '/mol.png';
+    if (lowerTitle === 'work') return '/work.jpeg';
+    if (lowerTitle === 'study') return '/study.jpeg';
     if (lowerTitle === 'exercise') return '/mol.png';
-    return '/mol.png';
+    if (lowerTitle === 'chill') return '/chill.jpeg';
+    else{
+      
+      return '/bean.jpeg';
+    }
   };
 
 
