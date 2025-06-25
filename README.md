@@ -1,14 +1,17 @@
-this is my personal app for managing the tasks
+# Sam’s Work List 📝
 
-# Sam’s Todo List
+A visually enhanced, component-based Todo List app built with **React** and **Hooks**.
 
-A simple, component-based Todo List app built with React and Hooks. It demonstrates:
+---
 
-- Displaying a list of tasks  
-- Deleting tasks  
-- A clean, responsive layout  
-- Custom background image support  
+## ✨ Features:
 
+- 📋 Add new tasks with **title** and **description**
+- 🖼️ Each task **automatically comes with a random relevant image** for better aesthetics
+- 🗑️ Delete tasks by clicking the **"Done"** button
+- 🎨 Responsive and clean layout with a **custom background image**
+- 🖥️ Mobile and Desktop friendly UI
+- 🖼️ **Sample Screenshot:**  
 ---
 
 ## Table of Contents
@@ -28,7 +31,7 @@ A simple, component-based Todo List app built with React and Hooks. It demonstra
 
 ## Demo
 
-![Todo List Screenshot](./public/image.png)
+![Todo List Screenshot](./public/final.png)
 
 ---
 
