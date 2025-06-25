@@ -9,6 +9,8 @@ const AddTodo = (props) => {
     if (lowerTitle === 'work') return '/work.jpeg';
     if (lowerTitle === 'study') return '/study.jpeg';
     if (lowerTitle === 'chill') return '/chill.jpeg';
+    if (lowerTitle === 'code') return '/code.jpeg';
+    if (lowerTitle === 'workout') return '/workout.jpeg';
     else{
       
       return '/bean.jpeg';
