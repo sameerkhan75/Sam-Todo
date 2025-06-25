@@ -5,14 +5,15 @@ const About = () => {
     <div className="container my-4">
       <h2>About This App</h2>
       <p>
-        This Todo App helps you manage your daily tasks efficiently. You can add tasks you want to complete, view your current task list, and delete tasks once they're done.
+        This Todo App helps you manage your daily tasks efficiently and with a bit of fun. 
+        You can add tasks with a title and description, view your current task list, and mark tasks as done once completed.
       </p>
       <p>
-        It's designed to keep you organized and improve your productivity by keeping all your to-dos in one place.
-        
+        Each task is automatically displayed with a random image to make your task list visually appealing and engaging.
       </p>
       <p>
-        It has clean interface so that you won't have to worry about unneccessary features. you can add images with the items you want to do the work
+        The app features a clean and responsive interface, making it easy to use on both desktop and mobile devices.
+        It's designed to help you stay organized without distractions.
       </p>
     </div>
   );
