@@ -31,6 +31,8 @@ A visually enhanced, component-based Todo List app built with **React** and **Ho
 
 ## Demo
 👉 [Live Site on Vercel](https://sam-todo-tan.vercel.app)
+
+
 ![Todo List Screenshot](./public/final.png)
 
 ---
