@@ -1,6 +1,7 @@
 # Sam’s Work List 📝
 
 A visually enhanced, component-based Todo List app built with **React** and **Hooks**.
+Manage your task with the cozy animation of the task
 
 ---
 
