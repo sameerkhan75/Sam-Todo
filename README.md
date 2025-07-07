@@ -15,20 +15,7 @@ Manage your task with the cozy animation of the task
 - 🖼️ **Sample Screenshot:**  
 ---
 
-## Table of Contents
 
-1. [Demo](#demo)  
-2. [Tech Stack](#tech-stack)  
-3. [Installation](#installation)  
-4. [Usage](#usage)  
-5. [Project Structure](#project-structure)  
-6. [Features](#features)  
-7. [Customization](#customization)  
-8. [Available Scripts](#available-scripts)  
-9. [Contributing](#contributing)  
-10. [License](#license)  
-
----
 
 ## Demo
 👉 [Live Site on Vercel](https://sam-todo-tan.vercel.app)
