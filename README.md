@@ -11,7 +11,7 @@ Manage your task with the cozy animation of the task
 - 🖼️ Each task **automatically comes with a random relevant image** for better aesthetics
 - 🗑️ Delete tasks by clicking the **"Done"** button
 - 🎨 Responsive and clean layout with a **custom background image**
-- 🖥️ Mobile and Desktop friendly UI
+- 🖥️ Mobile and Desktop friendly UI and can work on both simultaniously
 - 🖼️ **Sample Screenshot:**  
 ---
 
