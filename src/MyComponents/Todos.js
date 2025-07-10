@@ -7,7 +7,7 @@ const Todos = (props) => {
       <h3 className="my-3">Todo List</h3>
 
       {props.todos.length === 0 ? (
-        "Great, You have completed all your tasks"
+        "Great, You have completed all your tasks time to relax"
       ) : (
         <div className="todo-container">
           {props.todos.map((todo) => (
