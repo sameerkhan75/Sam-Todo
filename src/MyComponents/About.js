@@ -14,6 +14,10 @@ const About = () => {
       <p>
         The app features a clean and responsive interface, making it easy to use on both desktop and mobile devices.
         It's designed to help you stay organized without distractions.
+
+      </p>
+      <p>
+        This is the product of the company moltres
       </p>
     </div>
   );
