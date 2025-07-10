@@ -17,7 +17,7 @@ const About = () => {
 
       </p>
       <p>
-        This is the product of the company moltres
+        This is the product of the company moltres which also have game buying and selling site and make teams
       </p>
     </div>
   );
