@@ -12,6 +12,7 @@ const Footer = () => {
     <footer className="text-light py-3" style={footerStyle}>
       <p className="text-center m-0">
         Copyright &copy; MyTodosList.com
+        parent: moltres
       </p>
     </footer>
   );
