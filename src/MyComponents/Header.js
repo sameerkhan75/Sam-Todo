@@ -1,12 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {Link} from "react-router-dom";
+import { GlitchText } from '../components/glitch-text';
 export default function Header(props) {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
-    <Link className="navbar-brand" to="/">{props.title}</Link>
+    <Link className="navbar-brand" to="/">
+      <GlitchText glitchIntensity="medium" glitchSpeed="normal" data-text={props.title}>
+        {props.title}
+      </GlitchText>
+    </Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>

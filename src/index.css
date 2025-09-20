@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,body {
   
   background: url('./MyComponents/toroto.jpeg') no-repeat center center;
@@ -15,4 +19,95 @@ html,body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Glitch Text Effects */
+.glitch-text {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch-text::before {
+  animation: glitch-1 0.5s infinite;
+  color: #ff0000;
+  z-index: -1;
+}
+
+.glitch-text::after {
+  animation: glitch-2 0.5s infinite;
+  color: #00ff00;
+  z-index: -2;
+}
+
+/* Intensity variations */
+.glitch-low::before,
+.glitch-low::after {
+  opacity: 0.3;
+}
+
+.glitch-medium::before,
+.glitch-medium::after {
+  opacity: 0.6;
+}
+
+.glitch-high::before,
+.glitch-high::after {
+  opacity: 0.9;
+}
+
+/* Speed variations */
+.glitch-slow::before {
+  animation-duration: 1s;
+}
+
+.glitch-slow::after {
+  animation-duration: 1.2s;
+}
+
+.glitch-normal::before {
+  animation-duration: 0.5s;
+}
+
+.glitch-normal::after {
+  animation-duration: 0.7s;
+}
+
+.glitch-fast::before {
+  animation-duration: 0.2s;
+}
+
+.glitch-fast::after {
+  animation-duration: 0.3s;
+}
+
+@keyframes glitch-1 {
+  0%, 14%, 15%, 49%, 50%, 99%, 100% {
+    transform: translate(0);
+  }
+  15%, 49% {
+    transform: translate(-2px, 2px);
+  }
+}
+
+@keyframes glitch-2 {
+  0%, 20%, 21%, 62%, 63%, 99%, 100% {
+    transform: translate(0);
+  }
+  21%, 62% {
+    transform: translate(2px, -2px);
+  }
 }
